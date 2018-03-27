@@ -8,12 +8,12 @@
     </div>
     <div class="collapse navbar-collapse container" id="myNavbar">
         <a href="/">
-          <img class="brand" src="Icons/Honeywell_Primary_Logo_RGB copy.png">
+          <img class="brand" src="{{ asset('Images/honeywell_logo.png') }}">
           </a>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="/shop">Shop</a></li>
         <li><a href="/learn">Learn</a></li>
-        <li><a href="/cart"><i class="material-icons" style="margin: 19px 0;">&#xE8CB;</i></a></li>
+        <li><a href="/cart"><span class="shopping-bag"></span></a></li>
         <li>  
 <form action="/search" style="width:170px;margin:32px 0;">
     <div class="input-group">

@@ -1,29 +1,53 @@
 nav {
     input[type=text].form-control {
-        width: 300px;
+        width: 200px;
     }
+
+  
     .form-control {
         border-radius: 0;
         border-color: $text-color;
-        border-width: 2px;
+        border-width: 1px;
     }
     .btn-info {
         background-color: $brand-info;
         border-color: $brand-info;
         border-radius: 0;
+        margin-left: -5px;
     }
 
     .brand {
-        width: 250px;
-        padding-top: 35px;
+        width: 450px;
+        padding-top: 45px;
         margin-left: 10px;
     }
 
-    @media (min-width: 768px){
-        .navbar-right {
-            margin-right:175px;
+    .shopping-bag {
+        background: url('/Icons/bag-icon.png') no-repeat;
+        background-size: contain;
+        height: 30px;
+        width: 30px;
+        display: block;
+        margin-top: 18px;
+        /* Other styles here */
+    }
+    .navbar-nav>li>a{
+        padding-bottom: 35px;
+
+        .shopping-bag{
+            padding-bottom:48px;
         }
     }
+    
+
+
+    @media (min-width: 768px){
+        .navbar-right {
+            margin-right:75px;
+            margin-bottom:20px;
+        }
+    }
+    
 }
 
 hr {

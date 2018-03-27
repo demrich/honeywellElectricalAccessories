@@ -14,30 +14,6 @@ AND SCHEDULE HONEYWELL SMART CONTROLS*</p>
         <button class="btn btn-info custom-blue-btn carousel-btn">Learn More</button>
     </center>
     </div>
-
-    <div class="item">
-      <img src="Images/iStock_000005442631Large.jpg" alt="Chicago">
-        <center>
-      <div class="carousel-text-box">
-        <p class="txt-big">VOICE CONTROL</p>
-        <p class="txt-small">USE GOOGLE ASSISTANT AND AMAZON ALEXA TO CONTROL<br> 
-AND SCHEDULE HONEYWELL SMART CONTROLS*</p>
-      </div>
-        <button class="btn btn-info custom-blue-btn carousel-btn">Learn More</button>
-    </center>
-    </div>
-
-    <div class="item">
-      <img src="Images/624459774.jpg" alt="New York">
-        <center>
-      <div class="carousel-text-box">
-        <p class="txt-big">VOICE CONTROL</p>
-        <p class="txt-small">USE GOOGLE ASSISTANT AND AMAZON ALEXA TO CONTROL<br> 
-AND SCHEDULE HONEYWELL SMART CONTROLS*</p>
-      </div>
-        <button class="btn btn-info custom-blue-btn carousel-btn">Learn More</button>
-    </center>
-    </div>
   </div>
 
   <!-- Left and right controls -->

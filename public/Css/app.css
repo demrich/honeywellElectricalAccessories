@@ -1,28 +1,48 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);nav input[type=text].form-control {
-  width: 300px;
+  width: 200px;
 }
 
 nav .form-control {
   border-radius: 0;
   border-color: #757780;
-  border-width: 2px;
+  border-width: 1px;
 }
 
 nav .btn-info {
   background-color: #1792e5;
   border-color: #1792e5;
   border-radius: 0;
+  margin-left: -5px;
 }
 
 nav .brand {
-  width: 250px;
-  padding-top: 35px;
+  width: 450px;
+  padding-top: 45px;
   margin-left: 10px;
+}
+
+nav .shopping-bag {
+  background: url("/Icons/bag-icon.png") no-repeat;
+  background-size: contain;
+  height: 30px;
+  width: 30px;
+  display: block;
+  margin-top: 18px;
+  /* Other styles here */
+}
+
+nav .navbar-nav > li > a {
+  padding-bottom: 35px;
+}
+
+nav .navbar-nav > li > a .shopping-bag {
+  padding-bottom: 48px;
 }
 
 @media (min-width: 768px) {
   nav .navbar-right {
-    margin-right: 175px;
+    margin-right: 75px;
+    margin-bottom: 20px;
   }
 }
 
