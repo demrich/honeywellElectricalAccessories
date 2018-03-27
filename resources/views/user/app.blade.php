@@ -10,6 +10,7 @@
   <link rel="stylesheet" type="text/css" href="Css/slick.css"/>
   <link rel="stylesheet" type="text/css" href="Css/style.css"/>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+  <link rel="stylesheet" href="{{ mix('/css/app.css') }}">
 </head>
 <body>
 @include("user.partials.topnav")

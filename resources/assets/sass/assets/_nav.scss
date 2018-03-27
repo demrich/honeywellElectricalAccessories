@@ -1,0 +1,32 @@
+nav {
+    input[type=text].form-control {
+        width: 300px;
+    }
+    .form-control {
+        border-radius: 0;
+        border-color: $text-color;
+        border-width: 2px;
+    }
+    .btn-info {
+        background-color: $brand-info;
+        border-color: $brand-info;
+        border-radius: 0;
+    }
+
+    .brand {
+        width: 250px;
+        padding-top: 35px;
+        margin-left: 10px;
+    }
+
+    @media (min-width: 768px){
+        .navbar-right {
+            margin-right:175px;
+        }
+    }
+}
+
+hr {
+    border-top: 1px solid $text-color;
+    margin-top: 10px;
+}

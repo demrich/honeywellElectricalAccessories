@@ -6,10 +6,8 @@
   .navbar {
   margin-bottom: 0;
   border: 0px;
-  border-bottom: solid 2px #808285;
   display: inline-block;
   font-size: 12px !important;
-  line-height: 1.42857143 !important;
   letter-spacing: 4px;
   border-radius: 0;
   background: white; 
@@ -24,8 +22,7 @@
   width:100%;
   }
   .navbar, div.navbar-header, .collapse .navbar-collapse{
-  height: 120px !important;
-  -moz-transition: height .25s linear;
+    -moz-transition: height .25s linear;
   -o-transition: height .25s linear;
   -webkit-transition: height .25s linear;
   transition: height .25s linear;
@@ -33,18 +30,7 @@
   div.navbar-header{
     width:70%;
   }
-  .navbar li a, .navbar .navbar-brand {
-    color:#808285 !important;
-    background-color: transparent !important;
-  }
-  img.header_icon{
-   width: 30%;
-   margin: 1%;
-  -moz-transition: margin-top .25s linear;
-  -o-transition: margin-top .25s linear;
-  -webkit-transition: margin-top .25s linear;
-  transition: margin-top .25s linear;
-  }
+  
   .navbar-nav{
     margin-top: 1%;
     -moz-transition: margin-top .25s linear;
@@ -170,7 +156,6 @@
 }
 .info-box-content-areaes p{
  font-size: 28px;
- padding: 0 120px;
 }
 .horizontal-scroll-wrapper{
   width:100%;

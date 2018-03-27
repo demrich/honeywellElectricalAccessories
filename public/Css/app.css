@@ -1,0 +1,33 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);nav input[type=text].form-control {
+  width: 300px;
+}
+
+nav .form-control {
+  border-radius: 0;
+  border-color: #757780;
+  border-width: 2px;
+}
+
+nav .btn-info {
+  background-color: #1792e5;
+  border-color: #1792e5;
+  border-radius: 0;
+}
+
+nav .brand {
+  width: 250px;
+  padding-top: 35px;
+  margin-left: 10px;
+}
+
+@media (min-width: 768px) {
+  nav .navbar-right {
+    margin-right: 175px;
+  }
+}
+
+hr {
+  border-top: 1px solid #757780;
+  margin-top: 10px;
+}
+
