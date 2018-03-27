@@ -28,7 +28,7 @@ nav .shopping-bag {
   width: 30px;
   display: block;
   margin-top: 18px;
-  /* Other styles here */
+  margin-right: 20px;
 }
 
 nav .navbar-nav > li > a {
