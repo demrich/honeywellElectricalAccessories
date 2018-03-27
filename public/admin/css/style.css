@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+  html,body{
+	background-color:#FFFFFF;
+	font-family: 'Open Sans', sans-serif;
+  height:100%;
+  width:100%;
+  }
+  .navArea{
+	  height:100%;
+    overflow:auto;
+  }
+  .contentArea{
+    height:100%;
+	  overflow:auto;
+  }
+  .navArea .nav {
+      background-color: #3d4646;
+      border: 0;
+      border-radius: 0;
+	    height:100%;
+  }
+  .navArea .nav li a, .nav {
+      color: #fff !important;
+	  text-align:left;
+	  font-size:25px;
+  }
+  .navArea .nav-pills li a:hover, .nav-pills li.active a {
+    color: #FFFFFF !important;
+	  border-radius:0;
+    background-color: #303838 !important;
+  }
+  .navArea .nav-pills {
+      border-color: transparent;
+      color: #fff !important;
+  }
+.navArea .navbar_area{
+	padding-right: 0px !important; 
+  padding-left: 0px !important; 
+}
+.main{
+  height:100%;
+  width:100%;
+  padding:0px 10px 0px 0px;
+}
+.row{
+  height:100%;
+}
+input[type="number"]{
+  width:100%;
+}
+
+
+
