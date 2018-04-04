@@ -21,7 +21,7 @@ $icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
 $font-family-sans-serif: "Raleway", sans-serif;
 $font-size-base: 14px;
 $line-height-base: 1.6;
-$text-color: #757780;
+$text-color: #808285;
 
 // Navbar
 $navbar-default-bg: #fff;
@@ -36,3 +36,13 @@ $input-color-placeholder: lighten($text-color, 30%);
 
 // Panels
 $panel-default-heading-bg: #fff;
+
+// Home Page
+
+$first-panel: url('/Images/honeywell-scenes.jpg');
+$second-panel: url('/Images/honeywell-timed-events.jpg');
+$third-panel: url('/Images/honeywell-control-anywhere.jpg');
+
+@media(max-width: 414px){
+$third-panel: url('/Images/honeywell-control-anywhere-mobile.jpg')
+}

@@ -1,4 +1,8 @@
   @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
+  html {
+    overflow-x: hidden;
+
+  }
   body{
     font-family: 'Open Sans', sans-serif;
     color:#4d4d4f;
@@ -10,7 +14,7 @@
   font-size: 12px !important;
   letter-spacing: 4px;
   border-radius: 0;
-  background: white; 
+  background: white;
   color:#D3D3D3;
   -moz-transition: background .25s linear;
   -o-transition: background .25s linear;
@@ -30,7 +34,7 @@
   div.navbar-header{
     width:70%;
   }
-  
+
   .navbar-nav{
     margin-top: 1%;
     -moz-transition: margin-top .25s linear;
@@ -78,20 +82,7 @@
     border-color: transparent;
     color: #D3D3D3 !important;
   }
-    .carousel-control, .carousel-control {
-    color: #fff;
-    text-decoration: none;
-    filter: alpha(opacity=90);
-    outline: 0; 
-    opacity: 0; 
-}
-  .carousel-control:focus, .carousel-control:hover {
-    color: #fff;
-    text-decoration: none;
-    filter: alpha(opacity=90);
-    outline: 0; 
-    opacity: 0; 
-}
+
   .carousel-inner>.item>img{
     position: relative;
   }
@@ -102,12 +93,13 @@
     z-index: 999;
     color: rgb(255, 255, 255);
     background: rgba(44, 44, 45, 0.7);
-    padding: 2px 4%;
+    padding: 20px 4%;
+    margin: 0 35px 0 0;
   }
   .carousel-text-box>.txt-big{
   font-family: 'Roboto', sans-serif;
   margin: 0px;
-  font-size: 75px;
+  font-size: 4.5em;
   word-spacing: 3px;
   color: white;
   }
@@ -120,8 +112,8 @@
   }
 .carousel-btn{
   position: absolute;
-  top: 27%;
-  left: 27%;
+  top: 27rem;
+  left: 24%;
   z-index: 999;
 }
 .custom-blue-btn{
@@ -150,12 +142,15 @@
 .info-box-content-areaes img{
   width:100%;
 }
-.info-box-content-areaes h1{
+.info-box-content-areaes h2{
+  text-transform: uppercase;
   font-size: 45px;
   color: #1792e5;
 }
 .info-box-content-areaes p{
  font-size: 28px;
+ color:#808285;
+ font-weight: 100;
 }
 .horizontal-scroll-wrapper{
   width:100%;
@@ -225,9 +220,7 @@ font-weight:bold;
 .salePriceBox .salePrice{
   font-weight:bold;
 }
-.salePriceBox .salePrice{
 
-}
 .withRowHeadingContainer{
   width:100%;
   margin:20px 0;
@@ -237,7 +230,7 @@ font-weight:bold;
 }
 .withRowHeading span {
   display: inline-block;
-  position: relative;  
+  position: relative;
 }
 .withRowHeading span:before,
 .withRowHeading span:after {

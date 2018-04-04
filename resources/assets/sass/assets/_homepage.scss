@@ -1,0 +1,69 @@
+
+.item img{
+    width: 100%;
+}
+.homebanner {
+    width:100%;
+    height:600px;
+    background:#000;
+}
+.one{
+    background: $first-panel no-repeat;
+    background-size: cover;
+    position: relative;
+
+    .hand {
+      position: absolute;
+      bottom: 0;
+    }
+
+}
+
+.two {
+    height:650px;
+    background: $second-panel no-repeat;
+    background-size: cover;
+
+}
+
+.three {
+    background: $third-panel no-repeat;
+    background-size: cover;
+
+}
+
+@media(max-width:414px){
+.three{
+background:url('/Images/honeywell-control-anywhere-mobile.jpg') no-repeat;
+background-size: cover;
+
+}
+}
+
+.hero{
+  position: absolute;
+  visibility: hidden;
+  top: 200px;
+  right: 7%;
+  color: #000;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+}
+
+.timed-event{
+  position: relative;
+  visibility: hidden;
+  top: 150px;
+  left: 25%;
+  color: #000;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+}
+
+.show {
+  visibility: visible;
+}

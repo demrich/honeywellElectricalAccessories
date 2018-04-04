@@ -4,30 +4,20 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner">
     <div class="item active">
-        <img src="Images/iStock_000068822847_Large.jpg" alt="Los Angeles">
-        <center>
-      <div class="carousel-text-box">
-        <p class="txt-big">VOICE CONTROL</p>
+        <img src="{{ asset('Images/honeywell-hero.jpg') }}" alt="Los Angeles">
+      <div class="carousel-text-box text-center">
+        <h1 class="txt-big">VOICE CONTROL</h1>
         <p class="txt-small">USE GOOGLE ASSISTANT AND AMAZON ALEXA TO CONTROL<br>
 AND SCHEDULE HONEYWELL SMART CONTROLS*</p>
       </div>
-        <button class="btn btn-info custom-blue-btn carousel-btn">Learn More</button>
-    </center>
+      <button class="btn btn-info custom-blue-btn carousel-btn">Learn More</button>
     </div>
+    <div class="hero reveal">"Turn on the <br>nightstand light" </div>
+
   </div>
 
   <!-- Left and right controls -->
-  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#myCarousel" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-<div class="container-fluid">
-<center><h1 class="main-heading">Browse Our Popular Products</h1></center>
+<center><h2 class="main-heading">Browse Our Popular Products</h2></center>
 <div class="slick-carousel shop-carousel">
 @foreach($products as $product)
 <div>
@@ -35,35 +25,51 @@ AND SCHEDULE HONEYWELL SMART CONTROLS*</p>
 </div>
 @endforeach
 </div>
-<dir class="row">
-  <div class="col-sm-12">
-    <div class="info-box-content-areaes">
-      <img src="Images/Scheduled-Time-photo.jpg">
+
+  <div class = "homebanner one">
+    <img class ="hand" src="{{ asset('Images/the-hand.png') }}">
+  </div>
+  <div class="container">
+      <div class="row">
+          <div class="col-sm-12">
+            <div class="info-box-content-areaes">
       <div class="info-box-content-area">
-      <h1>CUSTOMIZED SCENES FOR DAY OR NIGHT, HOME OR AWAY</h1>
+      <h2>CUSTOMIZED SCENES FOR DAY OR NIGHT, HOME OR AWAY</h2>
       <p>Program groups of lights for entertaining, events, or certain times of day or night.</p>
     </div>
   </div>
   </div>
-  <div class="col-sm-12">
-    <div class="info-box-content-areaes">
-      <img src="Images/Scheduled-Time-photo.jpg">
-      <div class="info-box-content-area">
-      <h1>SCHEDULE TIMED EVENTS FOR CONNECTED DEVICES</h1>
-      <p>Schedule what you want, when you want it. Set lighting and other devices to turn on, turn off or dim at certain times of the day.</p>
-     </div>
-    </div>
   </div>
-  <div class="col-sm-12">
-    <div class="info-box-content-areaes">
-      <img src="Images/Scheduled-Time-photo.jpg">
-      <div class="info-box-content-area">
-      <h1>CONTROL WITH ONE TOUCH FROM ANYWHERE**</h1>
-      <p>Whether home or away, you can control any of your smart devices from your smartphone, tablet or PC.</p>
-    </div>
-    </div>
   </div>
-</dir>
+  <div class = "homebanner two"><div class="timed-event reveal">"Brew coffee at 6:00 am"</div>
 </div>
-
+  <div class="container">
+      <div class="row">
+          <div class="col-sm-12">
+            <div class="info-box-content-areaes">
+      <div class="info-box-content-area">
+      <h2>Schedule Timed events for Conneted Devices</h2>
+      <p>Schedule what upi want, when you want it. Set lighting and other
+        devices to turn on, turn off, or dim at certain times of the day.</p>
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  <div class = "homebanner three"></div>
+  <div class="container">
+      <div class="row">
+          <div class="col-sm-12">
+            <div class="info-box-content-areaes">
+      <div class="info-box-content-area">
+      <h2>Control with One Touch From Anywhere **</h2>
+      <p>Whether home or away, you can control any of your smart devices from your smartphone, tablet, or PC</p>
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
+</div>
+<div class="container-fluid">
+<script src="{{ asset('Js/animate-scroll.js') }}"></script>
 @endsection
