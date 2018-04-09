@@ -9,7 +9,7 @@
           <img class="img-responsive" src="{{ asset('Images/honeywell_learn_more.jpg') }}" alt="Hero Image">
         <div class="carousel-text-box text-center">
           <h1 class="txt-big">Get Connected</h1>
-          <p class="txt-small">Provide Coverage for you entire home</p>
+          <p class="txt-small">Provide Coverage for your entire home</p>
         </div>
       </div>
     </div>

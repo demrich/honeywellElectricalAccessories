@@ -1,4 +1,7 @@
 
+.carousel-text-box {
+  max-width: 700px;
+}
 .item img{
     width: 100%;
 }
@@ -130,7 +133,8 @@
 
 @media(max-width: 414px) {
   .carousel-text-box>.txt-big {
-    font-size: 24px;
+    font-size: 30px;
+    padding-bottom:10px;
   }
 
   .carousel-text-box>.txt-small {
@@ -143,7 +147,7 @@
   }
 
   .carousel-btn {
-    top: 17rem;
+    top: 18rem;
     left: 20%;
 }
 .hero {

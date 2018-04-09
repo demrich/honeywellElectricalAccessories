@@ -3596,6 +3596,10 @@ hr {
   margin-top: 10px;
 }
 
+.carousel-text-box {
+  max-width: 700px;
+}
+
 .item img {
   width: 100%;
 }
@@ -3715,7 +3719,8 @@ hr {
 
 @media (max-width: 414px) {
   .carousel-text-box > .txt-big {
-    font-size: 24px;
+    font-size: 30px;
+    padding-bottom: 10px;
   }
 
   .carousel-text-box > .txt-small {
@@ -3728,7 +3733,7 @@ hr {
   }
 
   .carousel-btn {
-    top: 17rem;
+    top: 18rem;
     left: 20%;
   }
 
@@ -3894,7 +3899,8 @@ hr {
 
 @media (max-width: 414px) {
   #learn .carousel-text-box {
-    padding: 20px 10px 0 10px;
+    padding: 20px 25px 0 25px;
+    top: 10%;
     left: 7%;
   }
 
