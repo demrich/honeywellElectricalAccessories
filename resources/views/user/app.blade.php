@@ -11,6 +11,7 @@
   <link rel="stylesheet" type="text/css" href="Css/style.css"/>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
   <link rel="stylesheet" href="{{ mix('/css/app.css') }}">
+
 </head>
 <body>
 @include("user.partials.topnav")
@@ -46,6 +47,7 @@
 </ul>
     </div>
   </div>
+
   <div class="footer-bottom-bar">
   <hr>
   <div class="row">
@@ -62,9 +64,9 @@
   </div>
   </div>
 </footer>
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
     <script type="text/javascript" src="Js/slick.min.js"></script>
+
 <script type="text/javascript">
       $(document).ready(function () {
         $('.shop-carousel').slick({
@@ -78,13 +80,13 @@
 var request = $.ajax({
   url: "/showModel",
   type: "POST",
-   data:{ 
+   data:{
     "_token": "{{ csrf_token() }}",
     productId:productId,
   }
 });
 request.done(function(replyResult) {
-$('#modelContentArea').html(replyResult);        
+$('#modelContentArea').html(replyResult);
 });
 request.fail(function(jqXHR, textStatus) {
   alert( "Request failed: " + textStatus);

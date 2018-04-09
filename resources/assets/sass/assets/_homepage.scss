@@ -6,6 +6,7 @@
     width:100%;
     height:600px;
     background:#000;
+
 }
 .one{
     background: $first-panel no-repeat;
@@ -32,12 +33,22 @@
 
 }
 
-@media(max-width:414px){
-.three{
-background:url('/Images/honeywell-control-anywhere-mobile.jpg') no-repeat;
-background-size: cover;
 
-}
+@media(max-width:768px){
+
+  .one {
+    height:350px;
+  }
+
+  .two {
+    height: 300px;
+  }
+
+  .three {
+    height: 800px;
+  }
+
+
 }
 
 .hero{
@@ -66,4 +77,97 @@ background-size: cover;
 
 .show {
   visibility: visible;
+}
+
+@media(max-width:768px){
+  .hero {
+    top:250px;
+    right:8%
+  }
+  .carousel-text-box {
+    top: 1%;
+  }
+ 
+
+  .carousel-btn {
+    top: 30rem;
+  }
+
+  .three{
+    height:1200px;
+  background:url('/Images/honeywell-control-anywhere-mobile.jpg') no-repeat;
+  background-size: contain;
+  background-position:center;
+
+  }
+
+  .two {
+    height:550px;
+    background:url('/Images/honeywell-mobile-2.jpg') no-repeat;
+    background-size: contain;
+    background-position:center;
+
+
+
+  }
+  .timed-event {
+    top: 100px;
+    width:150px;
+    left:50%;
+    overflow: hidden;
+  }
+
+  .one {
+    height:600px;
+    background:url('/Images/honeywell-mobile-3.jpg') no-repeat;
+    background-size: contain;
+    background-position:center;
+
+  }
+
+
+}
+
+@media(max-width: 414px) {
+  .carousel-text-box>.txt-big {
+    font-size: 24px;
+  }
+
+  .carousel-text-box>.txt-small {
+    font-size: 15px;
+  }
+
+  .carousel-text-box {
+    top: 2%;
+    left:8%;
+  }
+
+  .carousel-btn {
+    top: 17rem;
+    left: 20%;
+}
+.hero {
+  top: 250px;
+  left: 10%;
+}
+
+.one {
+  height: 325px;
+}
+
+.info-box-content-areaes .info-box-content-area {
+  padding:  0;
+}
+
+.two {
+  height: 300px;
+}
+
+.timed-event {
+  top: 20px;
+}
+
+.three{
+  height:650px;
+}
 }

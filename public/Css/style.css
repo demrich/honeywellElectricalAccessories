@@ -55,9 +55,7 @@
     background-color: transparent;
     width:100%;
   }
-  .navbar-toggle .icon-bar {
-    background-color: white !important;
-  }
+
   .nav>li>a {
     line-height: 65px;
     text-transform: uppercase;
@@ -267,11 +265,10 @@ font-weight:bold;
 }
 footer{
   color: rgb(208, 208, 208);
-  background:rgb(40, 40, 40);
-  height: 80vh;
+  background:#707070;
   padding: 1% 4%;
   position: relative;
-
+  
 }
 footer span.heading{
   font-size: 23px;
@@ -292,11 +289,7 @@ footer a:hover{
 color:rgb(208, 208, 208);
 text-decoration: none;
 }
-footer .footer-bottom-bar{
-  position: absolute;
-  bottom: 2%;
-  width:92%;
-}
+
 footer .footer-bottom-bar .terms-bar a{
   margin:5px;
 }

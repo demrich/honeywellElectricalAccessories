@@ -4,17 +4,18 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner">
     <div class="item active">
-        <img src="{{ asset('Images/honeywell-hero.jpg') }}" alt="Los Angeles">
+        <img class="hidden-sm hidden-xs" src="{{ asset('Images/honeywell-hero.jpg') }}" alt="Hero Image">
+        <img class="hidden-md hidden-lg hidden-xl" src="{{ asset('Images/honeywell-mobile-1.jpg') }}" alt="Los Angeles">
       <div class="carousel-text-box text-center">
         <h1 class="txt-big">VOICE CONTROL</h1>
-        <p class="txt-small">USE GOOGLE ASSISTANT AND AMAZON ALEXA TO CONTROL<br>
+        <p class="txt-small">USE GOOGLE ASSISTANT AND AMAZON ALEXA TO CONTROL
 AND SCHEDULE HONEYWELL SMART CONTROLS*</p>
       </div>
       <button class="btn btn-info custom-blue-btn carousel-btn">Learn More</button>
     </div>
-    <div class="hero reveal">"Turn on the <br>nightstand light" </div>
 
   </div>
+  <div class="hero reveal">"Turn on the <br>nightstand light" </div>
 
   <!-- Left and right controls -->
 <center><h2 class="main-heading">Browse Our Popular Products</h2></center>
@@ -27,7 +28,7 @@ AND SCHEDULE HONEYWELL SMART CONTROLS*</p>
 </div>
 
   <div class = "homebanner one">
-    <img class ="hand" src="{{ asset('Images/the-hand.png') }}">
+    <img class ="hand hidden-sm hidden-xs" src="{{ asset('Images/the-hand.png') }}">
   </div>
   <div class="container">
       <div class="row">
@@ -70,6 +71,5 @@ AND SCHEDULE HONEYWELL SMART CONTROLS*</p>
   </div>
   </div>
 </div>
-<div class="container-fluid">
 <script src="{{ asset('Js/animate-scroll.js') }}"></script>
 @endsection

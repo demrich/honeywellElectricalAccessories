@@ -3,7 +3,10 @@ nav {
         width: 200px;
     }
 
-  
+    .navbar-toggle .icon-bar {
+      background-color: $text-color !important;
+    }
+
     .form-control {
         border-radius: 0;
         border-color: $text-color;
@@ -13,13 +16,14 @@ nav {
         background-color: $brand-info;
         border-color: $brand-info;
         border-radius: 0;
-        margin-left: -5px; 
+        margin-left: -5px;
     }
 
     .brand {
         width: 450px;
         padding-top: 45px;
         margin-left: 10px;
+        float: left;
     }
 
     .shopping-bag {
@@ -38,16 +42,68 @@ nav {
             padding-bottom:48px;
         }
     }
-    
+
+.mobile {
+  width: 150px;
+  padding: 40px 0 0 0;
+  margin-left: 20px;
+}
 
 
-    @media (min-width: 768px){
+    @media (min-width: 769px){
         .navbar-right {
             margin-right:75px;
             margin-bottom:20px;
         }
+
+         .navbar-collapse {
+          padding-bottom: 40px !important;
+        }
+
+
     }
-    
+
+    @media(max-width: 768px) {
+      .brand {
+        width: 150px;
+        padding: 35px 0 0 0;
+        margin-left: 20px;
+      }
+
+        .search {
+          position: relative;
+        }
+
+        input[type=text].form-control {
+          width:125px !important;
+        }
+    }
+
+    @media(max-width: 767px) {
+      form {
+        position: relative;
+        left: 28%;
+      }
+    }
+
+    input[type=text].form-control {
+      width:200px;
+
+    }
+
+
+    .nav{
+      li {
+        height:35px !important;
+        text-align: center;
+      }
+
+
+      .input-group-btn {
+        display: block;
+      }
+    }
+
 }
 
 hr {

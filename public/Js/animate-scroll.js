@@ -23,7 +23,7 @@ function checkSlide(e) {
       console.log(window.scrollY);
       revealText.classList.add('show');
       revealText.classList.add('animated');
-      revealText.classList.add('bounceInUp');
+      revealText.classList.add('fadeIn');
     }
   });
 }
