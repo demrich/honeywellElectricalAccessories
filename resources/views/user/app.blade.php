@@ -4,10 +4,13 @@
   <title>Home</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="Css/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="Css/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="Css/slick/slick-theme.css"/>
+
   <link rel="stylesheet" type="text/css" href="Css/style.css"/>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
   <link rel="stylesheet" href="{{ mix('/css/app.css') }}">
@@ -65,17 +68,45 @@
   </div>
 </footer>
 
-    <script type="text/javascript" src="Js/slick.min.js"></script>
-
+<script type="text/javascript" src="{{ asset('/Js/slick.js') }}"></script>
 <script type="text/javascript">
-      $(document).ready(function () {
+      $(document).ready(
+        
+        function () {
         $('.shop-carousel').slick({
-          infinite: true,
           slidesToShow: 4, // Shows a three slides at a time
           slidesToScroll: 1, // When you click an arrow, it scrolls 1 slide at a time
-          arrows: false
+          infinite: true,
+          arrows:true,
+          responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+          ]
+
         });
       });
+      
       function openModel(productId){
 var request = $.ajax({
   url: "/showModel",

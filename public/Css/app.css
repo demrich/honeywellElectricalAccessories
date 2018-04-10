@@ -3763,6 +3763,26 @@ hr {
   }
 }
 
+@media (max-width: 375px) {
+  .hero {
+    top: 235px;
+    font-size: 18px;
+  }
+
+  .carousel-btn {
+    left: 18%;
+  }
+
+  .carousel-btn {
+    padding: 8px 35px;
+  }
+
+  .timed-event {
+    top: 45px;
+    font-size: 18px;
+  }
+}
+
 #learn {
   text-align: center;
 }
@@ -3774,6 +3794,7 @@ hr {
 #learn .carousel-text-box {
   left: 20%;
   padding: 40px 70px;
+  max-width: 900px;
 }
 
 #learn .carousel-text-box .txt-small {
@@ -3911,6 +3932,16 @@ hr {
 
   #learn .carousel-text-box .txt-small {
     font-size: 14px;
+  }
+}
+
+#shop h1 {
+  padding-bottom: 40px;
+}
+
+@media (max-width: 414px) {
+  #shop .product-box {
+    margin-left: 40px;
   }
 }
 

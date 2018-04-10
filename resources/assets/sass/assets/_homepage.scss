@@ -175,3 +175,21 @@
   height:650px;
 }
 }
+
+@media(max-width: 375px) {  
+.hero {
+  top: 235px;
+  font-size: 18px;
+}
+.carousel-btn {
+  left: 18%;
+}
+.carousel-btn {
+  padding: 8px 35px;
+}
+
+.timed-event {
+  top:45px;
+  font-size: 18px;
+}
+}

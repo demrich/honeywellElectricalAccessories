@@ -1,0 +1,13 @@
+#shop{
+
+    h1 {
+        padding-bottom:40px;
+    }
+
+
+    @media(max-width:414px) {
+        .product-box{
+            margin-left:40px;
+        }
+    }
+}

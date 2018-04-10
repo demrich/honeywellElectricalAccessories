@@ -1,15 +1,24 @@
 @extends("user.app")
 @section("content")
-<div class="container-fluid">
+<div id="shop">
 @if(count($categories))
 @foreach($categories as $categorie)
 <div class="container-fluid">
 <center><h1>{{$categorie->name}}</h1></center>
 <?php $products = App\Http\Controllers\ProductsController::getFromCategory($categorie->categorieId);?>
 @if(count($products))
-@foreach($products as $product)
+
+@foreach($products->chunk(3) as $productChunk)
+<div class="row">
+
+@foreach($productChunk as $product)
+<div class="col-md-4">
 @include("user.partials.productBoxShop")
+</div>
 @endforeach
+</div>
+@endforeach
+
 @endif
 </div>
 @endforeach

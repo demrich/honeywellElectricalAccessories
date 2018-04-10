@@ -18,13 +18,15 @@ AND SCHEDULE HONEYWELL SMART CONTROLS*</p>
   <div class="hero reveal">"Turn on the <br>nightstand light" </div>
 
   <!-- Left and right controls -->
+  <div class="container">
 <center><h2 class="main-heading">Browse Our Popular Products</h2></center>
-<div class="slick-carousel shop-carousel">
+<div class="slick carousel shop-carousel">
 @foreach($products as $product)
-<div>
+
 @include("user.partials.productBox")
-</div>
+
 @endforeach
+</div>
 </div>
 
   <div class = "homebanner one">
