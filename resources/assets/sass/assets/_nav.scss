@@ -110,3 +110,9 @@ hr {
     border-top: 1px solid $text-color;
     margin-top: 10px;
 }
+
+@media(max-width:414px) {
+  .nav>li>a{
+    line-height: 0;
+  }
+}

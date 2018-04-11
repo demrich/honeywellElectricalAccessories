@@ -12,7 +12,7 @@
       <ul class="nav navbar-nav navbar-right">
         <li><a href="/shop">Shop</a></li>
         <li><a href="/learn">Learn</a></li>
-        <li><a href="/cart"><span class="shopping-bag"></span></a></li>
+        <li><a href="https://byjasco.com/cart" target="_blank"><span class="shopping-bag"></span></a></li>
         <li>
 <form class="search" action="/search" style="width:170px;margin:32px 0;">
     <div class="input-group">

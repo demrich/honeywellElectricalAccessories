@@ -72,6 +72,37 @@
     </div>
 
     <div class="signals">
+
+  <div id="signal-one" class="signal">
+    <span class="signal s1"></span>
+    <span class="signal s2"></span>
+    <span class="signal s3"></span>
+  </div>
+
+  <div id="signal-two" class="signal">
+    <span class="signal s1"></span>
+    <span class="signal s2"></span>
+    <span class="signal s3"></span>
+  </div>
+
+  <div id="signal-three" class="signal">
+    <span class="signal s1"></span>
+    <span class="signal s2"></span>
+    <span class="signal s3"></span>
+  </div>
+
+  <div id="signal-four" class="signal">
+    <span class="signal s1"></span>
+    <span class="signal s2"></span>
+    <span class="signal s3"></span>
+  </div>
+
+  <div id="signal-five" class="signal">
+    <span class="signal s1"></span>
+    <span class="signal s2"></span>
+    <span class="signal s3"></span>
+  </div>
+
       <img class="img-responsive" src="{{ asset('Images/house-signal.jpg') }}" alt="Hero Image">
     </div>
 

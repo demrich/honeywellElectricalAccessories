@@ -20,7 +20,6 @@ function checkSlide(e) {
     const revealTop = revealText.offsetTop;
 
     if(window.scrollY > (revealTop - 150)){
-      console.log(window.scrollY);
       revealText.classList.add('show');
       revealText.classList.add('animated');
       revealText.classList.add('fadeIn');

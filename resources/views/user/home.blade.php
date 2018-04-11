@@ -73,5 +73,5 @@ AND SCHEDULE HONEYWELL SMART CONTROLS*</p>
   </div>
   </div>
 </div>
-<script src="{{ asset('Js/animate-scroll.js') }}"></script>
+<script src="{{ asset('js/animate-scroll.js') }}"></script>
 @endsection

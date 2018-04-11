@@ -10,4 +10,10 @@
             margin-left:40px;
         }
     }
+
+    @media(max-width:320px) {
+        .product-box{
+            margin-left: 0;
+        }
+    }
 }

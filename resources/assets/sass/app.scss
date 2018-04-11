@@ -15,10 +15,11 @@
 
 @import "~animate.css/animate.css";
 
+@import "./assets/signal";
+
 
 .carousel-inner {
   text-transform: uppercase;
-  letter-spacing: 1px;
 
   .txt-small {
     font-weight: 100;
@@ -56,5 +57,25 @@
     line-height: .5em;
     // container element color...
     background-color: #fff;
+  }
+}
+
+@media(max-width: 768px) {
+
+}
+
+@media(max-width:414px){
+  .slick-next, .slick-prev {
+    z-index: 100;
+  }
+  .slick-next{
+    right: -15px;
+  }
+  .slick-next:before{
+    margin-left: -40px;
+
+  }
+  .slick-prev:before{
+    margin-left: 40px;
   }
 }

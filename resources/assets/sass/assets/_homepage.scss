@@ -36,6 +36,12 @@
 
 }
 
+@media(min-width: 2000px){
+  .carousel-btn {
+    top: 35rem;
+  }
+}
+
 
 @media(max-width:768px){
 
@@ -142,13 +148,13 @@
   }
 
   .carousel-text-box {
-    top: 2%;
+    top: 5%;
     left:8%;
   }
 
   .carousel-btn {
-    top: 18rem;
-    left: 20%;
+    top: 19rem;
+    left: 17%;
 }
 .hero {
   top: 250px;
@@ -169,6 +175,8 @@
 
 .timed-event {
   top: 20px;
+  font-size: 21px;
+
 }
 
 .three{
@@ -192,4 +200,25 @@
   top:45px;
   font-size: 18px;
 }
+.carousel-text-box {
+  top: 5%;
+  left:8%;
+  padding:10px 4%;
+}
+}
+
+@media(max-width:320px) {
+  .carousel-text-box > .txt-small {
+    font-size: 12px
+  }
+  .carousel-text-box {
+    padding: 10px 4%;
+  }
+  .carousel-btn {
+    left:12%;
+  }
+
+  .hero.reveal.show.animated {
+    display: none !important;
+  }
 }

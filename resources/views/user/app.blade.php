@@ -8,10 +8,10 @@
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="Css/slick/slick.css"/>
-  <link rel="stylesheet" type="text/css" href="Css/slick/slick-theme.css"/>
-
-  <link rel="stylesheet" type="text/css" href="Css/style.css"/>
+  <link rel="stylesheet" type="text/css" href="{{ asset('css/slick/slick.css') }}"/>
+  <link rel="stylesheet" type="text/css" href="{{ asset('css/slick/slick-theme.css') }}"/>
+<link rel="stylesheet" type="text/css" href="https://cloud.typography.com/6379196/6231992/css/fonts.css" />
+  <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css')}}"/>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
   <link rel="stylesheet" href="{{ mix('/css/app.css') }}">
 
@@ -68,7 +68,7 @@
   </div>
 </footer>
 
-<script type="text/javascript" src="{{ asset('/Js/slick.js') }}"></script>
+<script type="text/javascript" src="{{ asset('/js/slick.js') }}"></script>
 <script type="text/javascript">
       $(document).ready(
         
