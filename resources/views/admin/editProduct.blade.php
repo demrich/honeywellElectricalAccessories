@@ -23,6 +23,14 @@
       <label for="priced">Price:</label>
       <input type="text" class="form-control" id="price" value="{{$product->price}}" placeholder="Enter Price" name="price" required>
     </div>
+    <div class="form-group">
+      <label for="sku">SKU:</label>
+      <input type="number" class="form-control" id="sku" value="{{$product->sku}}" placeholder="Enter SKU" name="sku" required>
+    </div>
+    <div class="form-group">
+      <label for="url">URL:</label>
+      <input type="text" class="form-control" id="url"  value="{{$product->url}}" placeholder="Enter URL" name="url">
+    </div>
 <div class="checkbox">
   @if($product->saleStatus)
   <label><input type="checkbox" name="saleStatus" value="1" checked>On Sale</label>

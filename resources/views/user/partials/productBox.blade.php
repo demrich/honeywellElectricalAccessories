@@ -1,5 +1,7 @@
   <div class="product-box">
+  <a href="{{$product->url}}" target="_blank">
   <img src="productImages/{{$product->thumbnail}}">
+  </a>
   <span class="product-name">{{$product->name}}</span>
     <button class="btn btn-product-btn" onClick="openModel('{{$product->productId}}')" data-toggle="modal" data-target="#quickViewModel"><i class="material-icons">&#xE8FF;</i></button>
 </div>

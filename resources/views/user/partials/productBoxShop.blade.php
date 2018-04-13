@@ -1,5 +1,7 @@
   <div class="product-box">
+  <a href="{{$product->url}}" target="_blank">
   <img src="productImages/{{$product->thumbnail}}">
+  </a>
   <span class="product-name">{{$product->name}}</span>
       @if($product->saleStatus)
     <div class="salePriceBox">

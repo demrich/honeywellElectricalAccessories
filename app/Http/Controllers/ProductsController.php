@@ -44,6 +44,8 @@ $categories = Categories::get();
             'images' => '',
             'categoryId'=>'required',
             'salePrice'=>'',
+            'sku'=>'required',
+            'url'=>'url',
             'saleStatus'=>'',
             'active'=>'',
             'description' => 'required',
@@ -124,13 +126,15 @@ $categories = Categories::get();
             'images' => '',
             'categoryId'=>'',
             'salePrice'=>'',
+            'sku'=>'required',
+            'url'=>'url',
             'saleStatus'=>'',
             'active'=>'',
             'description' => 'required',
             'price' => 'required'
         ]);
         $previousData = Products::where("productId",$data['productId'])->get()->first();
-$productId = $data["productId"];
+         $productId = $data["productId"];
         if (isset($data["thumbnail"]) && $data["thumbnail"] != null) {
         File::delete("productImages/".$previousData->thumbnail);
         $thumbfilefile = $data["thumbnail"];
@@ -208,10 +212,13 @@ $productId = $data["productId"];
         if(request("searchFor") == null){
          return "<center><h2>Please Enter Something To Search...</h2></center>";
         }
-         $products = Products::where(request("searchWith"),"LIKE","%".request('searchFor'))->get();
+         $products = Products::where(request("searchWith"),"LIKE","%".request('searchFor').'%')->get();
          return view("admin.partials.productSearchTable",compact("products"));
     }
-    public function home(){
+    public function cominSoon(){
+        return view("user.comingSoon");
+    }    
+	public function home(){
         $products = Products::orderBy("position","ASC")->get();
         return view("user.home",compact('products'));
     }
@@ -225,7 +232,7 @@ $productId = $data["productId"];
     }
     public function search(){
 if(request("search") != null){
-$products = Products::orderBy("position","ASC")->where("name","LIKE","%".request('search'))->get();
+$products = Products::orderBy("position","ASC")->where("name","LIKE","%".request('search').'%')->get();
         return view("user.search",compact('products'));
 
 }

@@ -16,9 +16,19 @@
       <textarea class="form-control" id="description" rows="5" name="description" reuired></textarea>
     </div>
     <div class="form-group">
-      <label for="priced">Price:</label>
+      <label for="price">Price:</label>
       <input type="text" class="form-control" id="price" placeholder="Enter Price" name="price" required>
     </div>
+    <div class="form-group">
+      <label for="sku">SKU:</label>
+      <input type="number" class="form-control" id="sku" placeholder="Enter SKU" name="sku" required>
+    </div>
+    <div class="form-group">
+      <label for="url">URL:</label>
+      <input type="text" class="form-control" id="url" placeholder="Enter URL" name="url">
+    </div>
+
+
 <div class="checkbox">
   <label><input type="checkbox" name="saleStatus" value="1">On Sale</label>
 </div>
