@@ -14,7 +14,7 @@
     </div>
     @endif
   <div class="buttonGrid">
-  	<button class="btn btn-product-btn"><i class="material-icons">&#xE8CB;</i></button>
+  	<button class="btn btn-product-btn add-to-cart" onClick="addCart('https://byjasco.com/products/{{$product->sku}}/add-to-cart', this)" ><i class="material-icons">&#xE8CB;</i></button>
     <button class="btn btn-product-btn" onClick="openModel('{{$product->productId}}')" data-toggle="modal" data-target="#quickViewModel"><i class="material-icons">&#xE8FF;</i></button>
   </div>
 

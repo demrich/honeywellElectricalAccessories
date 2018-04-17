@@ -5,7 +5,7 @@
   }
   body{
     font-family: "Gotham SSm A", "Gotham SSm B", arial, sans-serif;
-    color:#4d4d4f;
+    color:#808285;
   }
   .navbar {
   margin-bottom: 0;
@@ -60,7 +60,7 @@
     line-height: 65px;
     text-transform: uppercase;
     font-size: 15px;
-    font-weight: 700;
+    font-weight: 100;
     display: inline-block;
     letter-spacing: .1em;
     -moz-transition: color .25s linear;
@@ -86,7 +86,7 @@
   }
    .carousel-text-box{
     position: absolute;
-    top: 5%;
+    top: 8%;
     left: 5%;
     z-index: 999;
     color: rgb(255, 255, 255);
@@ -97,16 +97,16 @@
   .carousel-text-box>.txt-big{
   font-family: "Gotham SSm A", "Gotham SSm B", arial, sans-serif;
   margin: 0px;
-  font-size: 4.5em;
-  word-spacing: 3px;
+  font-size: 4.4em;
   color: white;
   font-weight:400;
+  white-space: nowrap;
+  overflow: hidden;
   }
   .carousel-text-box>.txt-small{
   font-family: "Gotham SSm A", "Gotham SSm B", arial, sans-serif;
   margin: 0px;
-  font-size: 20px;
-  word-spacing: 3px;
+  font-size: 18px;
   color: white;
   }
 .carousel-btn{
@@ -276,7 +276,6 @@ footer{
 footer span.heading{
   font-size: 23px;
   margin: 20px 0px;
-  font-weight: bold;
   text-transform: uppercase;
   display: block;
 }

@@ -3530,6 +3530,10 @@ nav .shopping-bag {
   margin-right: 20px;
 }
 
+nav .fa-shopping-cart {
+  font-size: 20px;
+}
+
 nav .navbar-nav > li > a {
   padding-bottom: 35px;
 }
@@ -3616,6 +3620,13 @@ hr {
   background: #000;
 }
 
+.disclaimer {
+  color: #808285;
+  font-weight: 100;
+  font-size: 12px;
+  padding-bottom: 10px;
+}
+
 .one {
   background: url("/Images/honeywell-scenes.jpg") no-repeat;
   background-size: cover;
@@ -3662,7 +3673,7 @@ hr {
   position: absolute;
   visibility: hidden;
   top: 200px;
-  right: 7%;
+  right: 5%;
   color: #000;
   font-style: italic;
   font-weight: 400;
@@ -3768,7 +3779,6 @@ hr {
 
   .timed-event {
     top: 20px;
-    font-size: 21px;
   }
 
   .three {
@@ -3778,13 +3788,13 @@ hr {
 
 @media (max-width: 375px) {
   .hero {
-    top: 235px;
+    top: 245px;
     font-size: 18px;
+    line-height: initial;
   }
 
   .carousel-btn {
-    top: 18rem;
-    left: 18%;
+    left: 16%;
   }
 
   .carousel-btn {
@@ -3795,15 +3805,14 @@ hr {
     top: 45px;
     font-size: 18px;
   }
-
-  .carousel-text-box {
-    top: 5%;
-    left: 8%;
-    padding: 10px 4%;
-  }
 }
 
 @media (max-width: 320px) {
+  .carousel-text-box {
+    top: 5%;
+    left: 3%;
+  }
+
   .carousel-text-box > .txt-small {
     font-size: 12px;
   }
@@ -3813,6 +3822,7 @@ hr {
   }
 
   .carousel-btn {
+    top: 16rem;
     left: 12%;
   }
 
@@ -3830,7 +3840,7 @@ hr {
 }
 
 #learn .carousel-text-box {
-  left: 20%;
+  left: 15%;
   padding: 40px 70px;
   max-width: 900px;
 }
@@ -3981,6 +3991,10 @@ hr {
   #learn .carousel-text-box .txt-small {
     font-size: 14px;
   }
+
+  #learn .info-box-content-areaes h2 {
+    font-size: 35px;
+  }
 }
 
 #shop h1 {
@@ -3997,6 +4011,18 @@ hr {
   #shop .product-box {
     margin-left: 0;
   }
+}
+
+.add-to-cart {
+  border-radius: 20px !important;
+  width: 40px;
+  -webkit-transition: width 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: width 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.add-to-cart span {
+  text-transform: uppercase;
+  font-size: 15px;
 }
 
 .signal span {
@@ -4167,6 +4193,33 @@ hr {
   z-index: 10;
 }
 
+#signal-five span.s1 {
+  width: 1em;
+  height: 1em;
+  margin-top: -.5em;
+  margin-left: -.5em;
+  -webkit-animation-delay: 1.3s;
+  animation-delay: 1.3s;
+}
+
+#signal-five span.s2 {
+  width: 2em;
+  height: 2em;
+  margin-top: -1em;
+  margin-left: -1em;
+  -webkit-animation-delay: 1.5s;
+  animation-delay: 1.5s;
+}
+
+#signal-five span.s3 {
+  width: 3em;
+  height: 3em;
+  margin-top: -1.5em;
+  margin-left: -1.5em;
+  -webkit-animation-delay: 2.22s;
+  animation-delay: 2.22s;
+}
+
 @-webkit-keyframes signal {
   from {
     opacity: 0;
@@ -4244,5 +4297,40 @@ hr {
   .slick-prev:before {
     margin-left: 40px;
   }
+}
+
+@media (mix-width: 1280px) {
+  .carousel-text-box > .txt-big {
+    overflow: hidden;
+    white-space: nowrap;
+  }
+}
+
+button a {
+  color: #fff;
+}
+
+button a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+.modal-title {
+  color: #3097D1;
+  font-size: 1.5em;
+}
+
+.modal label {
+  color: #000;
+  font-weight: 100;
+}
+
+.modal button {
+  color: #fff;
+}
+
+.footer-bottom-bar {
+  font-size: 12px;
+  font-weight: 100;
 }
 

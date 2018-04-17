@@ -1,7 +1,7 @@
 <nav class="navbar navbar-default">
         <a href="/">
-          <img class="brand img-responsive hidden-sm hidden-xs" src="{{ asset('Images/honeywell_logo.png') }}">
-          <img class="mobile brand img-responsive hidden-md hidden-lg hidden-xl" src="{{ asset('Icons/honeywell_logo.png') }}" alt="">
+          <img class="brand img-responsive hidden-sm hidden-xs" src="{{ asset('Images/honeywell_logo.svg') }}">
+          <img class="mobile brand img-responsive hidden-md hidden-lg hidden-xl" src="{{ asset('Icons/honeywell_logo_mobile.svg') }}" alt="">
           </a>
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
             <span class="icon-bar"></span>
@@ -12,7 +12,7 @@
       <ul class="nav navbar-nav navbar-right">
         <li><a href="/shop">Shop</a></li>
         <li><a href="/learn">Learn</a></li>
-        <li><a href="https://byjasco.com/cart" target="_blank"><span class="shopping-bag"></span></a></li>
+        <li><a href="https://byjasco.com/cart" target="_blank"><i class="fa fa-shopping-cart"></i></a></li>
         <li>
 <form class="search" action="/search" style="width:170px;margin:32px 0;">
     <div class="input-group">

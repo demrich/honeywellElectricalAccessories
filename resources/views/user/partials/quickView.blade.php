@@ -3,7 +3,7 @@
 </div>
 <div class="modal-body row productModel">
   <div class="col-sm-4">
-    <img src="productImages/{{$product->thumbnail}}" class="thumbnail">
+   <a href="{{ $product->url }}"> <img src="productImages/{{$product->thumbnail}}" class="thumbnail"></a>
   </div>
   <div class="col-sm-8">
     <h1 class="name">{{$product->name}}</h1>

@@ -1,6 +1,6 @@
 @extends("user.app")
 @section("content")
-<div id="shop">
+<div class="animated fadeIn" id="shop">
 @if(count($categories))
 @foreach($categories as $categorie)
 <div class="container-fluid">
@@ -26,4 +26,6 @@
 <center><h1>0 Categories Found</h1></center>
 @endif
 </div>
+
+
 @endsection

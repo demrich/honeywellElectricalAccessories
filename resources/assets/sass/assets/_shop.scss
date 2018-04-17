@@ -16,4 +16,22 @@
             margin-left: 0;
         }
     }
+   
+}
+
+.add-to-cart {
+        border-radius:20px !important;
+        width:40px;
+        transition: width .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    
+
+
+
+    span{
+        text-transform: uppercase;
+        font-size: 15px
+
+    }
+
+
 }

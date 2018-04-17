@@ -20,8 +20,7 @@
 
 .carousel-inner {
   text-transform: uppercase;
-  letter-spacing: 1px;
-
+  
   .txt-small {
     font-weight: 100;
   }
@@ -79,4 +78,42 @@
   .slick-prev:before{
     margin-left: 40px;
   }
+}
+
+@media(mix-width: 1280px) {
+  .carousel-text-box>.txt-big{
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+}
+
+button {
+  a {
+    color:#fff;
+    &:hover{
+      text-decoration: none;
+      color: #fff;
+    }
+  }
+}
+
+.modal-title {
+  color: $brand-primary;
+  font-size: 1.5em;
+}
+
+.modal {
+  label{
+    color: #000;
+    font-weight: 100;
+  }
+  button{
+    color:#fff;  
+  }
+}
+
+.footer-bottom-bar {
+  font-size: 12px;
+  font-weight: 100;
 }

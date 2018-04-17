@@ -11,6 +11,12 @@
     background:#000;
 
 }
+.disclaimer{
+  color: $text-color;
+  font-weight: 100;
+  font-size: 12px;
+  padding-bottom: 10px;
+}
 .one{
     background: $first-panel no-repeat;
     background-size: cover;
@@ -64,7 +70,7 @@
   position: absolute;
   visibility: hidden;
   top: 200px;
-  right: 7%;
+  right: 5%;
   color: #000;
   font-style: italic;
   font-weight: 400;
@@ -153,8 +159,8 @@
   }
 
   .carousel-btn {
-    top: 18.5rem;
-    left: 20%;
+    top: 19rem;
+    left: 17%;
 }
 .hero {
   top: 250px;
@@ -184,11 +190,12 @@
 
 @media(max-width: 375px) {  
 .hero {
-  top: 235px;
+  top: 245px;
   font-size: 18px;
+  line-height: initial;
 }
 .carousel-btn {
-  left: 18%;
+  left: 16%;
 }
 .carousel-btn {
   padding: 8px 35px;
@@ -201,6 +208,10 @@
 }
 
 @media(max-width:320px) {
+  .carousel-text-box {
+    top: 5%;
+    left:3%;
+  }
   .carousel-text-box > .txt-small {
     font-size: 12px
   }
@@ -208,6 +219,7 @@
     padding: 10px 4%;
   }
   .carousel-btn {
+    top:16rem;
     left:12%;
   }
 
