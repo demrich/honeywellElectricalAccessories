@@ -6,8 +6,12 @@
   }
 
 .carousel-text-box {
-  left:15%;
-  padding:40px 70px;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  padding: 40px 70px;
   max-width: 900px;
   
   .txt-small {
@@ -84,23 +88,12 @@ span {
     width: 100%;
   }
 }
-  @media(max-width: 414px){
-  .info-box-content-areaes .info-box-content-area {
-    padding: 0 20px 20px 20px;
-  }
-  h2 {
-    padding-bottom: 5px;
-  }
 
-
-  p {
-    padding-bottom: 20px;
-  }
-  }
 
     @media(max-width:1024px){
+    
       .carousel-text-box {
-        left:10%
+        max-width:800px;
       }
 
         .disclaimer div {
@@ -110,17 +103,36 @@ span {
     .carousel-text-box>.txt-big {
         font-size:4em;
       }
-      .carousel-text-box {
-        left: 4%;
+
     }
+
+    @media(max-width: 768px) {
+      .carousel-text-box {
+        top:3%;
+        max-width:600px;
+        .txt-big {
+          font-size: 3.5em;
+        }
+      }
     }
 
     @media(max-width: 414px){
 
+      .info-box-content-areaes .info-box-content-area {
+        padding: 0 20px 20px 20px;
+      }
+      h2 {
+        padding-bottom: 5px;
+      }
+    
+    
+      p {
+        padding-bottom: 20px;
+      }
+
       .carousel-text-box {
         padding:20px 25px 0 25px;
-        top:10%;
-        left:7%;
+        max-width:300px;
 
         .txt-big{
           left: 4%;

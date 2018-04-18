@@ -3606,8 +3606,15 @@ hr {
   }
 }
 
+.carousel-inner button {
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+
 .carousel-text-box {
   max-width: 700px;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
 }
 
 .item img {
@@ -3649,6 +3656,31 @@ hr {
   background-size: cover;
 }
 
+@media (min-width: 2560px) {
+  .carousel-text-box {
+    position: absolute;
+    top: 8%;
+    left: 15%;
+    z-index: 999;
+    color: white;
+    background: rgba(44, 44, 45, 0.7);
+    padding: 20px 4%;
+    margin: 0 35px 0 0;
+  }
+
+  .hero {
+    position: absolute;
+    visibility: hidden;
+    top: 400px;
+    right: 10%;
+    color: #000;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+  }
+}
+
 @media (min-width: 2000px) {
   .carousel-btn {
     top: 35rem;
@@ -3685,12 +3717,14 @@ hr {
   position: relative;
   visibility: hidden;
   top: 150px;
-  left: 25%;
+  left: 60%;
   color: #000;
   font-style: italic;
   font-weight: 400;
   font-size: 24px;
   text-align: center;
+  overflow: hidden;
+  max-width: 350px;
 }
 
 .show {
@@ -3701,10 +3735,6 @@ hr {
   .hero {
     top: 250px;
     right: 8%;
-  }
-
-  .carousel-text-box {
-    top: 1%;
   }
 
   .carousel-btn {
@@ -3807,6 +3837,18 @@ hr {
   }
 }
 
+@media (max-width: 360px) {
+  .hero {
+    top: 236px;
+    font-size: 18px;
+    line-height: initial;
+  }
+
+  .carousel-btn {
+    top: 18.5rem;
+  }
+}
+
 @media (max-width: 320px) {
   .carousel-text-box {
     top: 5%;
@@ -3840,7 +3882,11 @@ hr {
 }
 
 #learn .carousel-text-box {
-  left: 15%;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
   padding: 40px 70px;
   max-width: 900px;
 }
@@ -3944,6 +3990,31 @@ hr {
   width: 100%;
 }
 
+@media (max-width: 1024px) {
+  #learn .carousel-text-box {
+    max-width: 800px;
+  }
+
+  #learn .disclaimer div {
+    width: 150px;
+  }
+
+  #learn .carousel-text-box > .txt-big {
+    font-size: 4em;
+  }
+}
+
+@media (max-width: 768px) {
+  #learn .carousel-text-box {
+    top: 3%;
+    max-width: 600px;
+  }
+
+  #learn .carousel-text-box .txt-big {
+    font-size: 3.5em;
+  }
+}
+
 @media (max-width: 414px) {
   #learn .info-box-content-areaes .info-box-content-area {
     padding: 0 20px 20px 20px;
@@ -3956,31 +4027,10 @@ hr {
   #learn p {
     padding-bottom: 20px;
   }
-}
 
-@media (max-width: 1024px) {
-  #learn .carousel-text-box {
-    left: 10%;
-  }
-
-  #learn .disclaimer div {
-    width: 150px;
-  }
-
-  #learn .carousel-text-box > .txt-big {
-    font-size: 4em;
-  }
-
-  #learn .carousel-text-box {
-    left: 4%;
-  }
-}
-
-@media (max-width: 414px) {
   #learn .carousel-text-box {
     padding: 20px 25px 0 25px;
-    top: 10%;
-    left: 7%;
+    max-width: 300px;
   }
 
   #learn .carousel-text-box .txt-big {
@@ -4332,5 +4382,35 @@ button a:hover {
 .footer-bottom-bar {
   font-size: 12px;
   font-weight: 100;
+}
+
+/* Preloader */
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  /* change if the mask should have another color then white */
+  z-index: 99;
+  /* makes sure it stays on top */
+}
+
+#status {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 50%;
+  /* centers the loading animation horizontally one the screen */
+  top: 50%;
+  /* centers the loading animation vertically one the screen */
+  background-image: url(https://raw.githubusercontent.com/niklausgerber/PreLoadMe/master/img/status.gif);
+  /* path to your loading animation */
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: -100px 0 0 -100px;
+  /* is width and height divided by two */
 }
 

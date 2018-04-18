@@ -1,5 +1,8 @@
 @extends("user.app")
+@section('title', 'Home')
+@section('meta', 'Use Google Assistant And Amazon Alexa To Control And Schedule Honeywell Smart Controls. Set Customized Scenes for Day or Night, Home or Away.')
 @section("content")
+
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
   <!-- Wrapper for slides -->
   <div class="carousel-inner">
@@ -7,7 +10,8 @@
         <img class="hidden-sm hidden-xs" src="{{ asset('Images/honeywell-hero.jpg') }}" alt="Hero Image">
         <img class="hidden-md hidden-lg hidden-xl" src="{{ asset('Images/honeywell-mobile-1.jpg') }}" alt="hero image">
       <div class="carousel-text-box text-center animated fadeInLeft">
-        <h1 class="txt-big">VOICE CONTROL</h1>
+        <h1 style="display:none">Honeywell Smart Home Control</h1>
+        <span class="txt-big">VOICE CONTROL</span>
         <p class="txt-small">USE GOOGLE ASSISTANT AND AMAZON ALEXA TO CONTROL
 AND SCHEDULE HONEYWELL SMART CONTROLS*</p>
       </div>

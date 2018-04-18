@@ -1,4 +1,6 @@
 @extends("user.app")
+@section('title', 'Learn More')
+@section('meta', 'Control all Honeywell Z-Wave devices with Google Assistant or Amazon Alexa with compatible hubs. Each Honeywell smart home control repeats the signal up to 150 feet. Adding additional Honeywell Smart Controls extends the range of your network for whole home wireless control.')
 @section("content")
 
 <div id ="learn">
@@ -110,6 +112,8 @@
       <div class="info-box-content-area">
       <h2>Your Home. Your Choices.</h2>
       <p>Each smart control repeats the signal up to 150 feet. Adding additional Honeywell Smart Controls extends the range of your network for whole home wireless control.</p>
+      <button class="btn btn-info custom-blue-btn"><a href="{{ url('/shop') }}">Shop Now</a></button>
+
     </div>
     </div>
 

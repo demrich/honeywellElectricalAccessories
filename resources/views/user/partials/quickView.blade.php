@@ -3,7 +3,7 @@
 </div>
 <div class="modal-body row productModel">
   <div class="col-sm-4">
-   <a href="{{ $product->url }}"> <img src="productImages/{{$product->thumbnail}}" class="thumbnail"></a>
+   <a href="{{ $product->url }}" target=""> <img src="productImages/{{$product->thumbnail}}" class="thumbnail"></a>
   </div>
   <div class="col-sm-8">
     <h1 class="name">{{$product->name}}</h1>
@@ -19,7 +19,7 @@
     @endif
     <button class="btn addToCart">Add to Cart</button>
     <p class="description">
-      {{$product->description}}
+      <?php print_r($product->description);?>
     </p>
   </div>
 </div>

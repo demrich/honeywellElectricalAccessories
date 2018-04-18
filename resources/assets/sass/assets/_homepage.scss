@@ -1,6 +1,14 @@
+.carousel-inner{
+  button{
+    animation-delay: 1.5s;
+
+  }
+}
 
 .carousel-text-box {
   max-width: 700px;
+  animation-delay: 1.5s;
+
 }
 .item img{
     width: 100%;
@@ -40,6 +48,31 @@
     background: $third-panel no-repeat;
     background-size: cover;
 
+}
+
+@media(min-width:2560px){
+  .carousel-text-box {
+    position: absolute;
+    top: 8%;
+    left: 15%;
+    z-index: 999;
+    color: rgb(255, 255, 255);
+    background: rgba(44, 44, 45, 0.7);
+    padding: 20px 4%;
+    margin: 0 35px 0 0;
+}
+
+.hero {
+  position: absolute;
+  visibility: hidden;
+  top: 400px;
+  right: 10%;
+  color: #000;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+}
 }
 
 @media(min-width: 2000px){
@@ -82,12 +115,14 @@
   position: relative;
   visibility: hidden;
   top: 150px;
-  left: 25%;
+  left: 60%;
   color: #000;
   font-style: italic;
   font-weight: 400;
   font-size: 24px;
   text-align: center;
+  overflow: hidden;
+  max-width: 350px;
 }
 
 .show {
@@ -99,10 +134,7 @@
     top:250px;
     right:8%
   }
-  .carousel-text-box {
-    top: 1%;
-  }
- 
+
 
   .carousel-btn {
     top: 30rem;
@@ -204,6 +236,17 @@
 .timed-event {
   top:45px;
   font-size: 18px;
+}
+}
+
+@media(max-width:360px) {
+  .hero {
+    top: 236px;
+    font-size: 18px;
+    line-height: initial;
+}
+.carousel-btn {
+  top: 18.5rem;
 }
 }
 

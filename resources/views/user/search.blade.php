@@ -1,4 +1,6 @@
 @extends("user.app")
+@section('title', 'Search Results')
+
 @section("content")
 <div class="container-fluid">
 @if(count($products))

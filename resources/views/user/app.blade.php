@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Home</title>
+  <title>Honeywell Electrical Accessories - @yield('title')</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="@yield('meta')">
+  <meta name="keywords" content="Honeywell Smart Controls, Smart Switch, In-wall Switches and Dimmers, Z-Wave, Honeywell Smart Home">
   <link rel=icon href={{ asset('favicon.ico')}} >
-  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" type="text/css" href="{{ asset('css/slick/slick.css') }}"/>
   <link rel="stylesheet" type="text/css" href="{{ asset('css/slick/slick-theme.css') }}"/>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -16,8 +15,13 @@
   <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css')}}"/>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
   <link rel="stylesheet" href="{{ mix('/css/app.css') }}">
-
+  
 </head>
+<div id="preloader">
+  <div id="status">&nbsp;</div>
+</div>
+
+
 <body>
 @include("user.partials.topnav")
 @yield("content")
@@ -33,21 +37,20 @@
     <div class="col-sm-3">
       <span class="heading">FEATURED</span>
       <ul class="list-group">
-  <li class="list-group-item"><a href="">In-wall Switches & Dimmers</a></li>
-  <li class="list-group-item"><a href="">Plug-in Switches & Dimmers</a></li>
+  <li class="list-group-item"><a href="{{ url('/shop') }}#category-1">In-wall Switches & Dimmers</a></li>
+  <li class="list-group-item"><a href="{{ url('/shop') }}#category-2">Plug-in Switches & Dimmers</a></li>
 </ul>
     </div>
     <div class="col-sm-3">
       <span class="heading">SERVICE & SUPPORT</span>
       <ul class="list-group">
-  <li class="list-group-item"><a href="">Visit Support</a></li>
-  <li class="list-group-item"><a href="">Product Manuals</a></li>
-</ul>
+  <li class="list-group-item"><a href="https:/byjasco.com/support">Visit Support</a></li>
+  </ul>
     </div>
     <div class="col-sm-3">
       <span class="heading">Contact</span>
       <ul class="list-group">
-  <li class="list-group-item"><a href="">About Us</a></li>
+  <li class="list-group-item"><a href="https://byjasco.com/about-jasco">About Us</a></li>
   <li class="list-group-item">
   
   <!-- Button trigger modal -->
@@ -111,6 +114,10 @@
   </div>
 </footer>
 <iframe id="result"style="width:0; height:0; border:0; border:none"></iframe>
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 <script type="text/javascript" src="{{ asset('/js/slick.js') }}"></script>
 <script type="text/javascript">
       $(document).ready(
@@ -201,6 +208,13 @@ var cartButton = document.querySelectorAll('.add-to-cart');
   gtag('config', 'UA-117342475-1');
 </script>
 
+<script>
+$(window).on('load', function() { // makes sure the whole site is loaded 
+  $('#status').fadeOut(); // will first fade out the loading animation 
+  $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website. 
+  $('body').delay(350).css({'overflow':'visible'});
+})
+</script>
 
   </body>
 </html>

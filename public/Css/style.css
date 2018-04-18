@@ -97,11 +97,10 @@
   .carousel-text-box>.txt-big{
   font-family: "Gotham SSm A", "Gotham SSm B", arial, sans-serif;
   margin: 0px;
-  font-size: 4.4em;
+  font-size: 3.4em;
   color: white;
   font-weight:400;
   white-space: nowrap;
-  overflow: hidden;
   }
   .carousel-text-box>.txt-small{
   font-family: "Gotham SSm A", "Gotham SSm B", arial, sans-serif;

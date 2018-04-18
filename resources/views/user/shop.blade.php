@@ -1,10 +1,12 @@
 @extends("user.app")
+@section('title', 'Shop')
+@section('meta', 'Use Google Assistant And Amazon Alexa To Control And Schedule Honeywell Smart Controls. Set Customized Scenes for Day or Night, Home or Away with Honeywell Smart Home Devices. Schedule what you want, when you want it. Set lighting and other devices to turn on, turn off, or dim at certain times of the day with Honeywell Smart Home Z-Wave Plus Controls.')
 @section("content")
 <div class="animated fadeIn" id="shop">
 @if(count($categories))
 @foreach($categories as $categorie)
 <div class="container-fluid">
-<center><h1>{{$categorie->name}}</h1></center>
+<center><h1 id="category-{{$categorie->id}}"}>{{$categorie->name}}</h1></center>
 <?php $products = App\Http\Controllers\ProductsController::getFromCategory($categorie->categorieId);?>
 @if(count($products))
 
